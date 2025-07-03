@@ -24,4 +24,4 @@ Si deseas probar este proyecto en tu máquina local, sigue los siguientes pasos:
 
 1. Clona este repositorio en tu máquina (bash):
 
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/Diosnelnik/Portfolio-Personal.git
