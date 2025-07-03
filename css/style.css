@@ -1,0 +1,233 @@
+/* Fuente moderna y reset básico */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav li {
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav li:hover {
+  transform: translateY(-3px);
+}
+
+nav a {
+  text-decoration: none;
+  color: #5a5a5a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007acc;
+}
+
+.layout {
+  display: flex;
+}
+
+main {
+  height: auto;
+  flex: 1; /* que tome el espacio restante */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+aside {
+  display: flex;
+  height: auto;
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1px;
+  flex-shrink: 0; /* evita que el aside se encoja */
+}
+
+aside img {
+  width: 100px; /* Puedes ajustar el tamaño de la imagen */
+  height: 100px; /* Mismo valor que el ancho para que sea perfectamente redonda */
+  border-radius: 50%; /* Esto hace que la imagen sea redonda */
+  object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
+}
+
+h2 {
+  color: #007acc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+thead {
+  background-color: #f7f9fc;
+  color: #007acc;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f0f4f8;
+  transition: background-color 0.3s ease;
+}
+
+.cardholder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #007acc;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+  color: #555;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  margin: 1.5rem auto 2rem auto; /* centrado horizontal */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+footer {
+  position: relative;   /* Necesario para que z-index funcione */
+  z-index: 2;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+footer a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer img {
+  width: 30px; /* Tamaño de los íconos, puedes ajustarlo a tu gusto */
+  height: 30px; /* Mantener el tamaño proporcional */
+  transition: transform 0.3s ease-in-out; /* Efecto de animación para el hover */
+}
+
+footer a:hover img {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
